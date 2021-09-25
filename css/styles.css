@@ -1,0 +1,81 @@
+html, body, .container {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
+    font-family: Cambria;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: white;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 174px;
+    height: 174px;
+    align-self: center;
+    padding-top: 50px;
+}
+
+.profile-info {
+    flex-direction: column;
+    align-self: center;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: inherit;
+}
+
+.icon-link {
+    height: 34px;
+    width: 34px;
+    padding: 10px;
+}
+
+.contacts {
+    display: flex;
+}
+
+.author-name {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.icon-text {
+    padding-right: 3px;
+    padding-top: 3px;
+    display: block;
+    line-height: 45px;
+}
+
+.icon-aligned {
+    height: 25px;
+    width: 25px;
+    padding: 10px;
+    float: left;
+}
+
+.logo {
+    max-width: 100px;
+    padding: 20px;
+}
