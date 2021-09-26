@@ -1,4 +1,4 @@
-html, body, .container {
+body, .container {
     height: 100%;
     width: 100%;
 }
@@ -16,14 +16,61 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row;
+}
+
+@media only screen and (max-width: 760px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .profile {
+        width: 100%;
+    }
+
+    .professional {
+        padding-left: 10px;
+    }
+
+    .welcome {
+        padding-left: 10px;
+    }
+
+    .logo {
+        max-width: 40px;
+    }
+}
+
+@media only screen and (min-width: 761px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .profile {
+        width: 30%;
+    }
+
+    .professional {
+        padding-left: 40px;
+    }
+
+    .about-me {
+        margin: 30px;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+
+    .profile-picture {
+        padding-top: 50px;
+    }
 }
 
 .profile {
     display: flex;
     flex-direction: column;
-    width: 30%;
     background-color: white;
+    padding-bottom: 10px;
 }
 
 .profile-picture {
@@ -31,7 +78,6 @@ body {
     width: 174px;
     height: 174px;
     align-self: center;
-    padding-top: 50px;
 }
 
 .profile-info {
@@ -42,18 +88,18 @@ body {
 .about-me {
     display: flex;
     flex-direction: column;
-    margin: 30px;
     width: inherit;
 }
 
 .icon-link {
     height: 34px;
     width: 34px;
-    padding: 10px;
 }
 
 .contacts {
     display: flex;
+    align-self: center;
+    justify-content: space-around;
 }
 
 .author-name {
@@ -62,8 +108,6 @@ body {
 }
 
 .icon-text {
-    padding-right: 3px;
-    padding-top: 3px;
     display: block;
     line-height: 45px;
 }
@@ -76,6 +120,53 @@ body {
 }
 
 .logo {
-    max-width: 100px;
     padding: 20px;
+}
+
+.professional {
+    padding-top: 20px;
+}
+
+p, h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.company {
+    width: 100px;
+}
+
+.icon-company {
+    width: 64px;
+}
+
+.date-local {
+    color: #8c8888;
+}
+
+.text-space-bottom {
+    padding-bottom: 10px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
