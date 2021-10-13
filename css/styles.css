@@ -27,13 +27,12 @@ body {
         width: 100%;
     }
 
-    .professional {
-        padding-left: 10px;
+    .profile-info {
+        min-width: 210px;
     }
 
-    .welcome {
-        padding-left: 10px;
-        padding-right: 10px;
+    .professional {
+        padding: 0 10px 0 10px;
     }
 
     .logo {
@@ -48,6 +47,7 @@ body {
 
     .profile {
         width: 30%;
+        min-width: 300px;
     }
 
     .professional {
