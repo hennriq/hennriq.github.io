@@ -25,6 +25,7 @@ body {
 
     .profile {
         width: 100%;
+        padding-top: 20px;
     }
 
     .profile-info {
@@ -48,6 +49,7 @@ body {
     .profile {
         width: 30%;
         min-width: 300px;
+        padding-top: 30px;
     }
 
     .professional {
@@ -60,10 +62,6 @@ body {
 
     .logo {
         max-width: 100px;
-    }
-
-    .profile-picture {
-        padding-top: 50px;
     }
 }
 
