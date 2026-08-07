@@ -1,1 +1,12 @@
-README.md
+# Local build and temporary assets
+.DS_Store
+Thumbs.db
+
+# Editor and IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Static-site local artifacts
+*.log
