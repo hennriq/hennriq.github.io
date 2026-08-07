@@ -16,6 +16,8 @@
   <meta property="og:image" content="https://hennriq.github.io/img/me.jpg">
   <meta property="og:site_name" content="Bruno Souza">
   <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="es_ES">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Bruno Souza | Senior Software Engineer and Tech Lead">
   <meta name="twitter:description" content="Senior Software Engineer and Tech Lead specializing in Java, Spring Boot, AWS, microservices, CI/CD, and Generative AI.">
@@ -23,6 +25,8 @@
   <link rel="canonical" href="https://hennriq.github.io/pt-br/">
   <link rel="alternate" hreflang="pt-BR" href="https://hennriq.github.io/pt-br/">
   <link rel="alternate" hreflang="en" href="https://hennriq.github.io/en/">
+  <link rel="alternate" hreflang="es" href="https://hennriq.github.io/es/">
+  <link rel="alternate" hreflang="x-default" href="https://hennriq.github.io/">
   <link rel="stylesheet" href="css/styles.css?v=2.0">
   <link rel="icon" type="image/png" href="img/ico.png" sizes="16x16">
   <link rel="icon" type="image/png" href="img/ico.png" sizes="32x32">
@@ -79,10 +83,13 @@
       }
 
       var usePortuguese = language.indexOf("pt") === 0 ||
-        language.indexOf(",pt") > -1 ||
-        timezone === "America/Sao_Paulo";
+        language.indexOf(",pt") > -1;
+      var useSpanish = language.indexOf("es") === 0 ||
+        language.indexOf(",es") > -1;
 
-      var target = usePortuguese ? "pt-br/" : "en/";
+      var target = usePortuguese ? "pt-br/" :
+        useSpanish ? "es/" :
+          timezone === "America/Sao_Paulo" ? "pt-br/" : "en/";
       window.location.replace(target + window.location.search + window.location.hash);
     }());
   </script>
@@ -96,6 +103,7 @@
     <div class="language-actions">
       <a href="pt-br/">Português</a>
       <a href="en/">English</a>
+      <a href="es/">Español</a>
     </div>
   </main>
 </body>

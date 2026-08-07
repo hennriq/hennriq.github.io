@@ -4,13 +4,14 @@ Site pessoal e profissional hospedado no GitHub Pages.
 
 ## Visão geral
 
-Este repositório contém a página de perfil de Bruno Souza, com conteúdo em português e inglês, estrutura responsiva e links para redes profissionais e projetos técnicos.
+Este repositório contém a página de perfil de Bruno Souza, com conteúdo em português, inglês e espanhol, estrutura responsiva e links para redes profissionais e projetos técnicos.
 
 ## Estrutura principal
 
 - `index.html`: página inicial com redirecionamento por idioma.
 - `pt-br/`: versão em português do site.
 - `en/`: versão em inglês do site.
+- `es/`: versão em espanhol do site.
 - `css/`: estilos compartilhados.
 - `img/`: imagens e ícones usados no layout.
 
